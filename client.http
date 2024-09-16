@@ -1,0 +1,23 @@
+# @name CreateGoal
+POST http://localhost:333/goals
+Content-Type: application/json
+
+{
+    "title": "Nao usar o celular na parte da noite",
+    "desiredWeeklyFrenquency": 7
+}
+
+###
+
+# @name GetPendingGoals
+GET http://localhost:333/pending-goals
+
+###
+
+# @name CreateGoalCompletition
+POST http://localhost:333/completition-goals
+Content-Type: application/json
+
+{
+    "goalId": "kwydeo6cn5h5v2y01myftspf"
+}
